@@ -1,0 +1,28 @@
+- name: Exploration
+  achievements:
+      - order: 1
+        name: Overlooking View
+        description: Reach the very top of Qingyun Peak.
+        requirements: "-"
+        primogems: 5
+        completed: false
+      - order: 2
+        name: The Remains of the Gale
+        description: Reach the top of the tower in Stormterror's Lair.
+        requirements: "-"
+        primogems: 5
+        completed: false
+- name: Reputation
+  achievements:
+      - order: 1
+        name: Megastar in Mondstadt
+        description: Reach Reputation Lv. 8 in Mondstadt.
+        requirements: "-"
+        primogems: 20
+        completed: true
+      - order: 2
+        name: Legend in Liyue
+        description: Reach Reputation Lv. 8 in Liyue.
+        requirements: "-"
+        primogems: 20
+        completed: true

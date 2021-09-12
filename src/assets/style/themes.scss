@@ -1,0 +1,68 @@
+// $themes: (
+//   light: (
+//     backgroundColor: #fff,
+//     textColor: #408bbd,
+//   ),
+//   dark: (
+//     backgroundColor: #222,
+//     textColor: #ddd,
+//   ),
+// );
+
+// @mixin themed() {
+// 	@each $theme, $map in $themes {
+// 	  $theme-map: map-get($themes, $theme) !global;
+// 	  .theme--#{$theme} & {
+// 		@content;
+// 	  }
+// 	}
+//   }
+
+// $background-color: #353940;
+:root,
+[data-theme="light"] {
+	// --color-accent: #3476c6;
+	--color-accent: #e1af2a;
+	// backgrounds
+	--color-background: hsl(220, 14%, 97%);
+	--color-background-a1: hsl(220, 14%, 93%);
+	--color-background-a2: hsl(220, 14%, 90%);
+	--color-background-a3: hsl(220, 14%, 86%);
+	--color-background-a4: hsl(220, 14%, 82%);
+	--color-titleBar: hsl(220, 14%, 90%);
+
+	// text
+	--text-color: hsl(220, 6%, 10%);
+	--text-color-a1: hsl(220, 6%, 20%);
+	--text-color-a2: hsl(220, 6%, 50%);
+
+	--app-background-color: var(--color-background);
+	--table-background-color: var(--color-background-a1);
+	--table-row-2n: var(--color-background-a2);
+	--table-head: var(--color-background-a4);
+}
+
+[data-theme="dark"] {
+	// --color-accent: #3476c6;
+	--color-accent: #e1af2a;
+	// backgrounds
+	--color-background: hsl(220, 12%, 17%);
+	--color-background-a1: hsl(220, 12%, 21%);
+	--color-background-a2: hsl(220, 12%, 24%);
+	--color-background-a3: hsl(220, 12%, 27%);
+	--color-background-a4: hsl(220, 12%, 30%);
+	--color-titleBar: hsl(220, 12%, 14%);
+
+	//text
+	--text-color: hsl(220, 6%, 90%);
+	--text-color-a1: hsl(220, 6%, 80%);
+	--text-color-a2: hsl(220, 6%, 53%);
+	// --app-background-color: #232629;
+	// --table-background-color: rgb(46, 49, 56);
+	// --table-row-2n: rgb(55, 58, 65);
+	// --table-head: rgb(75, 81, 88);
+	--app-background-color: var(--color-background);
+	--table-background-color: var(--color-background-a1);
+	--table-row-2n: var(--color-background-a2);
+	--table-head: var(--color-background-a4);
+}
